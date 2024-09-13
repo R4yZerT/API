@@ -27,9 +27,9 @@ const printData = (data) => {
     let respuesta = document.getElementById("show-info");
     respuesta.innerHTML = `
     <h1>Name: ${data['displayName']}</h1>
-    <h1>Description: ${data['description']}</h1>
+    <h2>Description: ${data['description']}</h2>
     <h1>Role: ${data['role']['displayName']} </h1>
-    <h1>Role Description: ${data['role']['description']} </h1>
+    <h2>Role Description: ${data['role']['description']} </h2>
     <img src="${data['displayIcon']}" alt="${data['displayName']}" />
     `;
 }
