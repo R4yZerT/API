@@ -1,0 +1,102 @@
+/* Configuración general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0F1923;
+    color: #ECE8E1;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Valorant Font', sans-serif; /* Puedes encontrar o crear una fuente personalizada estilo Valorant */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF4655; /* Rojo característico de Valorant */
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F1923;
+}
+
+#input_agent {
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    background-color: #1F2933;
+    color: #ECE8E1;
+    border: 2px solid #FF4655;
+    transition: border 0.3s ease-in-out;
+}
+
+#input_agent:focus {
+    border: 2px solid #00FFA3; /* Verde brillante de Valorant */
+    outline: none;
+}
+
+#button_search {
+    width: 25%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    background-color: #FF4655;
+    color: #ECE8E1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#button_search:hover {
+    background-color: #00FFA3; /* Verde brillante al pasar el cursor */
+}
+
+#country_information,
+#show-info {
+    width: 40%;
+    height: auto;
+    background-color: #1F2933;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+#country_information:hover,
+#show-info:hover {
+    transform: scale(1.02);
+}
+
+#show-info img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#show-info img:hover {
+    transform: scale(1.1);
+}
+
+.agente-header {
+    color: #FF4655;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.agente-role {
+    color: #00FFA3;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
